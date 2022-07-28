@@ -1,0 +1,203 @@
+html{font-size:12px;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans",sans-serif}body{margin:0;padding:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.app{margin:0;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}html{overflow:hidden;--primaryTextColor:#000;--primaryBackgroundColor:#fff;--secondaryTextColor:#333;--shadowColor:hsla(0,0%,100%,0.5);--tertiaryTextColor:#777}html.other{overflow:hidden;--primaryTextColor:#fff;--primaryBackgroundColor:#000;--secondaryTextColor:#ccc;--shadowColor:rgba(0,0,0,0.5);--tertiaryTextColor:#888}main{position:fixed;z-index:1;top:1rem;right:1rem;display:flex;flex:1 1;align-items:center;justify-content:center}main:active{transform:scale(.9)}#toggle{display:none}.switch{cursor:pointer;display:flex;width:1.5rem;height:1.5rem;padding:.75rem;background-color:hsla(0,0%,100%,.5);background-color:var(--shadowColor);border-radius:25%;box-shadow:0 0 .25rem .25rem hsla(0,0%,50.2%,.2);align-items:center;justify-content:center;transition:background-color .5s linear;font-size:.5rem}.name,.title{transition:color .5s linear;font-weight:400;position:relative;z-index:1}.name{font-size:6rem;margin:0 0 3.5rem;color:#000;color:var(--primaryTextColor)}.title{font-size:3.5rem;margin:4rem 0;color:#333;color:var(--secondaryTextColor)}@media only screen and (max-device-width:820px) and (-webkit-min-device-pixel-ratio:2){.name{font-size:4.5rem}.title{font-size:2.5rem}}a,a:active,a:hover{outline:0}.button-container{display:inline-block;height:6rem;width:6rem;margin:0 1.75rem}.button{transition:color .5s linear;height:6rem;width:6rem;color:#000;color:var(--primaryTextColor);display:table-cell;vertical-align:middle;text-align:center;text-decoration:none;position:relative;z-index:1;border-radius:25%}.icon{height:4.5rem;width:4.5rem;padding:1rem}.icon_title{font-size:1.5rem}.button:hover{background-color:hsla(0,0%,100%,.5);background-color:var(--shadowColor);box-shadow:0 0 .75rem .75rem hsla(0,0%,50.2%,.2)}.button:active{transform:scale(.9)}.button-container .icon_title{display:none}.button-container:hover .icon_title{display:inline;display:initial}.button-container:hover .icon{display:none}@media only screen and (max-device-width:820px) and (-webkit-min-device-pixel-ratio:2){.button-container{margin:0 .8rem}.button,.button-container{height:5rem;width:5rem}.icon{height:4rem;width:4rem;padding:.5rem}.icon_title{font-size:1.3rem}}.footer-container{position:flex;bottom:0;right:0;font-size:.75rem;padding-right:1rem;z-index:1}.footer-text{color:#777;color:var(--tertiaryTextColor)}.footer-link,.footer-text{transition:color .5s linear}.footer-link{text-decoration:none;color:#333;color:var(--secondaryTextColor)}.particles{transition:background-color .5s linear;position:absolute;background-color:#fff;background-color:var(--primaryBackgroundColor);background-repeat:no-repeat;background-size:cover;background-position:50% 50%;z-index:0}
+/*# sourceMappingURL=main.e6ab051c.chunk.css.map */
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+    animation: slide-out-container 4s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
+    animation-fill-mode: forwards;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+  }
+
+.text-wrapper {
+    color: white;
+    position: absolute;
+}
+
+.text {
+    font-family: "Monument Extended";
+    font-weight: lighter;
+    font-size: 54px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+}
+
+
+
+.text-1,
+.text-3,
+.text-4,
+.text-8,
+.text-9,
+.text-11 {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0%;
+    }
+    1% {
+        opacity: 100%;
+    }
+    99% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.text-1 {
+    animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
+    opacity: 0;
+}
+
+.text-2 {
+    animation: blink 0.8s linear 0.8s, blink 0.8s linear 2.1s;
+    opacity: 0;
+}
+
+.text-3 {
+    animation: blink 0.8s linear 0.7s, blink 0.8s linear 2.2s;
+    opacity: 0;
+}
+
+.text-4 {
+    animation: blink 0.8s linear 0.6s, blink 0.8s linear 2.3s;
+    opacity: 0;
+}
+
+.text-5 {
+    animation: blink 0.8s linear 0.5s, blink 0.8s linear 2.4s;
+    opacity: 0;
+}
+
+.text-6 {
+    animation: linear 2.5s, slide-out 1s linear 3.2s;
+    text-align: center;
+    opacity: 0;
+}
+
+.text-7 {
+    animation: blink 0.8s linear 0.5s, blink 0.8s linear 2.4s;
+    opacity: 0;
+}
+
+.text-8 {
+    animation: blink 0.8s linear 0.6s, blink 0.8s linear 2.3s;
+    opacity: 0;
+}
+
+.text-9 {
+    animation: blink 0.8s linear 0.7s, blink 0.8s linear 2.2s;
+    opacity: 0;
+}
+
+.text-10 {
+    animation: blink 0.8s linear 0.8s, blink 0.8s linear 2.1s;
+    opacity: 0;
+}
+
+.text-11 {
+    animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
+    opacity: 0;
+}
+
+@keyframes slide-out {
+    0% {
+        opacity: 0%;
+    }
+    1% {
+        opacity: 100%;
+    }
+
+    19% {
+        opacity: 100%;
+    }
+    20% {
+        opacity: 0%;
+    }
+
+    39% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 100%;
+    }
+
+    59% {
+        opacity: 100%;
+    }
+    60% {
+        opacity: 0%;
+    }
+
+    79% {
+        opacity: 0%;
+    }
+    80% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-out-container {
+    0% {
+        height: 100vh;
+    }
+
+    40% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+@media (max-width: 990px) {
+    .header {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+}

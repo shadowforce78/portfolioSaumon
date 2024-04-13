@@ -37,10 +37,10 @@ body {
     color: #fff;
 
     font-size: 2.3vh;
-    
+
     width: 17vh;
     height: 5vh;
-    
+
     top: 4vh;
     right: 10vh;
 }
@@ -49,10 +49,22 @@ body {
     right: 50vh;
 }
 
-.about{
+.about {
     right: 30vh;
 }
 
-.contact{
+.contact {
     right: 10vh;
+}
+
+
+.mainbody {
+
+    position: absolute;
+    background-color: #222831;
+    width: 190vh;
+    height: 85vh;
+    top: 13.5vh;
+
+
 }

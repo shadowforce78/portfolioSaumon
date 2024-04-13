@@ -65,3 +65,41 @@ body {
     height: 85vh;
     top: 13.5vh;
 }
+
+.titlebody {
+
+    position: absolute;
+    width: 133vh;
+    height: 44vh;
+    left: 32vh;
+    top: 37vh;
+
+    background: #31363F;
+
+
+}
+
+
+p.title {
+    
+    @import url('https://fonts.googleapis.com/css2?family=Jeju+Gothic&display=swap');
+
+    position: absolute;
+    width: 128vh;
+    height: 39vh;
+    left: 33.5vh;
+    top: 36vh;
+
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vh;
+    line-height: 5.5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
